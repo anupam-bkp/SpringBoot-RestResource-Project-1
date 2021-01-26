@@ -25,14 +25,14 @@ public class UserController {
 	UserService userService;
 	
 //	@CrossOrigin(origins = "http://localhost:3000")
-	@CrossOrigin(origins = "http://192.168.1.8:3000")
+	@CrossOrigin(origins = "http://192.168.1.1:3000")
 	@GetMapping("/users")
 	public List<User> getUsers(){
 		return userService.getAllUsers();
 	}
 	
 //	@CrossOrigin(origins = "http://localhost:3000")
-	@CrossOrigin(origins = "http://192.168.1.8:3000")
+	@CrossOrigin(origins = "http://192.168.1.1:3000")
 	@PostMapping("/users")
 	public User addUser(@Valid @RequestBody User user) {
 		
@@ -45,7 +45,7 @@ public class UserController {
 	}
 	
 //	@CrossOrigin(origins = "http://localhost:3000")
-	@CrossOrigin(origins = "http://192.168.1.8:3000")
+	@CrossOrigin(origins = "http://192.168.1.1:3000")
 	@GetMapping("/user/{username}")
 	public EntityModel<User> getUserHateos(@PathVariable String username) {
 		
@@ -66,7 +66,7 @@ public class UserController {
 	}
 	
 //	@CrossOrigin(origins = "http://localhost:3000")
-	@CrossOrigin(origins = "http://192.168.1.8:3000")
+	@CrossOrigin(origins = "http://192.168.1.1:3000")
 	@PostMapping("/userslist")
 	public List<User> addUserList(@Valid @RequestBody List<User> users) {
 		
@@ -77,7 +77,7 @@ public class UserController {
 	}
 	
 //	@CrossOrigin(origins = "http://localhost:3000")
-	@CrossOrigin(origins = "http://192.168.1.8:3000")
+	@CrossOrigin(origins = "http://192.168.1.1:3000")
 	@GetMapping("/users/auth/{username}/{password}")
 	public boolean authenticate(@PathVariable String username, @PathVariable String password) {
 		
