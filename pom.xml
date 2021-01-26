@@ -53,6 +53,13 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <configuration>
+          <propertiesEncoding>ISO-8859-1</propertiesEncoding>
+        </configuration>
+      </plugin>
 		</plugins>
 	</build>
 
